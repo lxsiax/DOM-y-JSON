@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="agregar">Añadir nuevo nodo</button>
+    <button type="button" id="borrar">Eliminar nodo</button>
+    <script>
+        var boton = document.getElementById('agregar');
+        var borrar = document.getElementById('borrar')
+        boton.addEventListener("click", () => {
+            var texto = prompt('Introduce el texto: ');
+            var div = document.createElement('div');
+            div.textContent = texto
+            document.body.appendChild(div);
+        })
+        borrar.addEventListener("click", () => {
+            document.body.removeChild(document.body.lastChild);
+        })
+    </script>
+</body>
+</html>

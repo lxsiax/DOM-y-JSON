@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        <label for="nombre">
+            <span>Nombre: </span>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre">
+        </label> <br>
+        <label for="edad">
+            <span>Edad: </span>
+            <input type="text" name="edad" id="edad" placeholder="edad">
+        </label> <br>
+        <button type="submit" id="agregar">Agregar usuario</button>
+    </form> 
+    <table id="tabla" border="1px" style="margin-top: 10px;">
+        <thead>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>

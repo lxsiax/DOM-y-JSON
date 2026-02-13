@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="agregar" type="button">Agregar tabla</button>
+    <script>
+        
+        function Vehiculo(marca, modelo, color, anyo) {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+            this.anyo = anyo;
+        }
+
+        var audi = new Vehiculo("Audi", "A3", "Negro", "2015");
+        var hyundai = new Vehiculo("Hyundai", "Tucson", "Blanco", "2018");
+        var citroen = new Vehiculo("Citroen", "Sara", "Negro", "1998");
+        var tesla = new Vehiculo("Tesla", "CiberTruck", "Blanco", "2023");
+        var seat = new Vehiculo("Seat", "Leon", "Azul", "2015");
+
+        var boton = document.getElementById("agregar");
+
+        boton.addEventListener("click", () => {
+            var tabla = document.createElement("table");
+            tabla.style.border = '1px solid black';
+            var thead = document.createElement("thead");
+            var tbody = document.createElement("tbody");
+            var tr = document.createElement("tr");
+            
+            Object.keys(citroen).forEach(clave => {
+                var td = document.createElement("td");
+                td.textContent = `${clave}`;
+                tr.appendChild(td);
+            })
+
+            var vehiculos = [audi, citroen, tesla, seat,hyundai];
+            
+            vehiculos.forEach(coche => {
+                var fila = document.createElement("tr");
+                Object.values(coche).forEach(valor => {
+                    var columna = document.createElement("td");
+                    columna.textContent = valor;
+                    fila.appendChild(columna);
+                })
+                tbody.appendChild(fila);
+            });
+
+            thead.appendChild(tr);
+            tabla.appendChild(thead);
+            tabla.appendChild(tbody);
+            document.body.appendChild(tabla);
+        })
+    </script>
+</body>
+</html>

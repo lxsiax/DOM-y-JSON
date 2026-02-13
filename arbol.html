@@ -1,0 +1,29 @@
+3<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <div>
+        <p></p>
+    </div>
+    <script>
+        var padre = document.documentElement;
+        var contador = 0;
+        function mostarDom(nodo, nivel = 0){
+            var cadena = '&nbsp;'
+            var espacios = cadena.repeat(nivel * 3);
+            document.body.innerHTML += `${espacios}${nodo.tagName.toLowerCase()}<br>`;
+
+            var hijos = Array.from(nodo.children);
+            hijos.forEach(hijo => {
+                    mostarDom(hijo, nivel +1);
+            });
+        }
+        mostarDom(padre,0);
+    </script>
+</body>
+</html>

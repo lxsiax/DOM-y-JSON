@@ -1,0 +1,55 @@
+{
+    "Ciudades":[
+        {
+            "nombre": "Sanlúcar de Barrameda"
+        },
+        {
+            "nombre": "Tarifa"
+        },
+        {
+            "nombre": "Conil de la Frontera"
+        },
+        {
+            "nombre": "Jerez de la Frontera"
+        },
+        {
+            "nombre": "Puerto Real"
+        },
+        {
+            "nombre": "Alcalá de los Gazules"
+        },
+        {
+            "nombre": "Algeciras"
+        },
+        {
+            "nombre": "Barbate"
+        },
+        {
+            "nombre": "Sevilla"
+        },
+        {
+            "nombre": "Cádiz"
+        },
+        {
+            "nombre": "El Puerto de Santa María"
+        },
+        {
+            "nombre": "Córdoba"
+        },
+        {
+            "nombre": "Málaga"
+        },
+        {
+            "nombre": "Madrid"
+        },
+        {
+            "nombre": "Barcelona"
+        },
+        {
+            "nombre": "Albacete"
+        },
+        {
+            "nombre": "Bilbao"
+        }
+    ]
+}
