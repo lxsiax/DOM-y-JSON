@@ -1,0 +1,33 @@
+{
+  "empresa": {
+    "departamento": [
+      {
+        "nombre": "IT",
+        "jefe": "Carlos",
+        "trabajador": [
+          {
+            "nombre": "Lucía",
+            "apellidos": "\"Fernandez\"",
+            "puesto": "Developer"
+          },
+          {
+            "nombre": "Miguel",
+            "apellidos": "\"Sanchez\"",
+            "puesto": "Tester"
+          }
+        ]
+      },
+      {
+        "nombre": "Diseño",
+        "jefe": "María",
+        "trabajador": [
+          {
+            "nombre": "Ana",
+            "apellidos": "\"Garcia\"",
+            "puesto": "Diseñadora"
+          }
+        ]
+      }
+    ]
+  }
+}
