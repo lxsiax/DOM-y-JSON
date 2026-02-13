@@ -1,0 +1,23 @@
+<empresa>
+    <departamento>
+        <nombre>IT</nombre><jefe>CARLOS</jefe>
+        <trabajador>
+            <nombre>Lucía</nombre>
+            <apellidos>"Fernandez"<apellidos>
+            <puesto>Developer</puesto>
+        </trabajador>
+        <trabajador>
+            <nombre>Miguel</nombre>
+            <apellidos>"Sanchez"<apellidos>
+            <puesto>Tester</puesto>
+        </trabajador>
+    </departamento>
+    <departamento>
+        <nombre>Diseño</nombre><jefe>María</jefe>
+        <trabajador>
+            <nombre>Ana</nombre>
+            <apellidos>"Garcia"<apellidos>
+            <puesto>Diseñadora</puesto>
+        </trabajador>
+    </departamento>
+</empresa>

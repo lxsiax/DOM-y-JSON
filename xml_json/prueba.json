@@ -1,0 +1,18 @@
+{
+    "departamento":{
+        "trabajador":[
+            {
+                "nombre": "Juan",
+                "apellidos": "Pérez",
+                "edad": "30",
+                "puesto": "Programador"
+            },
+            {
+                "nombre": "Ana",
+                "apellidos": "García",
+                "edad": "28",
+                "puesto": "Diseñadora"
+            }
+        ]
+    }
+}
